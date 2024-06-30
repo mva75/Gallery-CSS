@@ -1,0 +1,820 @@
+:root {
+    --color1: #999966;
+    --color2: #aab7b8;
+}
+
+header {
+    background: var(--color1);
+    background: linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%);
+    color: #000066;
+}
+
+
+footer {
+    background-color: azure;
+}
+
+nav {
+    background: var(--color1);
+}
+
+section, aside {
+    background: var(--color2);
+    height: 100vh;
+    color: #000066;
+}
+
+
+   
+
+header, section, aside, footer {
+    padding: 10px;
+}
+
+.nav-link {
+    border-left: 1px solid #000066;
+    padding: 15px; 
+       
+} 
+
+.col {
+    text-decoration-line: none;
+   
+}
+
+a:hover {
+    font-size: 105%;
+} 
+
+#title {
+    padding: 30px;
+   
+}
+
+.col-sm-3 li {
+    list-style-type: none; 
+    
+}
+
+aside {
+    margin-left: -22px;
+}
+
+nav {
+    border: 1px solid #000066;
+}
+
+
+#home {
+    margin: 30px;
+}
+
+.square {
+    width: 350px;
+    height: 350px;
+    margin: 100px;
+    background: #32CD32;
+}
+
+#square1 {
+    box-shadow: inset 0 0 8px;
+}
+
+#square2 {
+    box-shadow: 5px 5px;
+}
+
+#square3 {
+    box-shadow: -5px -5px;
+}
+
+#square4 {
+    box-shadow: 0 0 5px;
+}
+
+#square5 {
+    box-shadow: 0 0 5px 2px;
+}
+
+#square6 {
+    box-shadow: 0 0 5px 2px #ffa500;
+}
+
+#gradient1 {
+    min-height: 100%;
+    background: linear-gradient( rgba(238,174,202,1), rgba(0,59,128,1));
+    margin: -10px;
+}
+
+#gradient2 {
+    min-height: 100%;
+    background: linear-gradient(90deg, #4caf50, #FFD700, #FF00FF, #40E0D0, #0000FF);
+    margin: -10px;
+}
+
+#gradient3 {
+    min-height: 100%;
+    background: radial-gradient(circle, #FFFF00, #FF00FF);
+    margin: -10px;
+}
+
+#gradient4 {
+    min-height: 100%;
+    background: conic-gradient(white, black, white);;
+    margin: -10px;
+}
+
+#gradient5 {
+    min-height: 100%;
+    background: repeating-linear-gradient(45deg, #fafafa, #fafafa 20px, #e0e0e0 20px, #e0e0e0 40px);
+    margin: -10px;
+}
+
+.circle {
+    border: solid 1px bisque;
+    margin: 100px;
+    margin-left: 500px;
+    width: 300px;
+    height: 300px;
+    background: #FFA500;
+    border-radius: 50%;
+    transition: background-color 1s ease-in-out;transition: background-color 1s ease-in-out;
+  }
+
+  #circle1:hover {
+    background: #0000FF;
+  }
+
+  #circle2:hover {
+    width: 400px;
+    height: 400px;
+  }
+
+  .rectangle {
+    margin: 100px;
+    margin-left: 300px;
+    width: 500px;
+    height: 100px;
+    background: #00FF00;
+  }
+
+  #rectangle:hover {
+    transform: translate(-50%, 50%);
+  }
+
+  .font {
+    text-align: center;
+  }
+
+  .font p:hover {
+    font-size: 200%;
+  }
+
+  #circle5:hover {
+    opacity: 30%;
+  }
+
+  #circle6:hover {
+    border-width: 10px;
+  }
+
+  @keyframes size-change {
+    from {
+      width: 50px;
+      height: 50px;
+    }
+    50% {
+      width: 70%;
+      height: 50px;
+    }
+    to {
+      width: 70%;
+      height: 70%;
+    }
+  }
+  
+  @keyframes color-change {
+    from {
+      background-color: red;
+    }
+    33% {
+      background-color: green;
+    }
+    66% {
+        background-color: orange;
+      }
+    to {
+      background-color: blue;
+    }
+  }
+
+  @keyframes position-change {
+    0%   {left:0px; top:0px;}
+    25%  {left:500px; top:0px;}
+    50%  {left:500px; top:500px;}
+    75%  {left:0px; top:500px;}
+    100% {left:0px; top:0px;}
+  }
+
+  .circlee {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  #animation2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  #animation1 {
+    animation: size-change 10s infinite alternate ease-out 1s;
+  }
+
+  #animation2 {
+    animation: color-change 10s alternate linear infinite;
+  }
+
+  #animation3 {
+    animation: position-change 5s alternate linear infinite;
+  }
+
+  #caesar1 {
+    filter: none;
+  }
+
+  #caesar2 {
+    filter: blur(5px);
+  }
+
+  #caesar3 {
+    filter: brightness(50%);
+  }
+
+  #caesar4 {
+    filter: contrast(20%);
+  }
+
+  #caesar5 {
+    filter: drop-shadow(2px 3px 5px black);
+  }
+
+  #caesar6 {
+    filter: grayscale(100%);
+  }
+
+  #caesar7 {
+    filter: hue-rotate(180deg);
+  }
+
+  #caesar8 {
+    filter: invert(100%);
+  }
+
+  #caesar9 {
+    filter: opacity(10%);
+  }
+
+  #caesar10 {
+    filter: saturate(300%);
+  }
+
+  #caesar11 {
+    filter: sepia(90%);
+  }
+
+
+  #table1 {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse; 
+  }
+  #table1 th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+  }
+  #table1 td {
+    border: 2px solid #dddddd;
+    padding: 5px;
+  } 
+
+
+  #table2{
+    border: 1px solid #eee;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #table2 th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+  }
+  #table2 td{
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: left;
+  }
+  #table2 tbody tr:nth-child(odd){
+    background: #fff;
+  }
+  #table2 tbody tr:nth-child(even){
+    background: #A9A9A9;
+  }
+
+
+  #table3 {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse; 
+  }
+  #table3 th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+  }
+  #table3 td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+  }
+  #table3 tr td:first-child, #table3 tr th:first-child {
+    border-left: none;
+  }
+  #table3 tr td:last-child, #table3 tr th:last-child {
+    border-right: none;
+  }
+
+
+  #table4 {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 15px solid #F2F8F8;
+    border-top: 5px solid #F2F8F8;
+    border-collapse: collapse; 
+  }
+  #table4 th {
+    font-weight: bold;
+    padding: 5px;
+    background: #F2F8F8;
+    border: none;
+    border-bottom: 5px solid #F2F8F8;
+  }
+  #table4 td {
+    padding: 5px;
+    border: none;
+    border-bottom: 5px solid #F2F8F8;
+  }
+
+
+  #table5 {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-collapse: collapse; 
+    outline: 3px solid #ffd300;
+    font-size: 15px;
+    background: #fff!important;
+  }
+  #table5 th {
+    font-weight: bold;
+    padding: 7px;
+    background: #ffd300;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #ffd300;
+  }
+  #table5 td {
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px;
+  }
+  #table5 tbody tr:nth-child(even){
+    background: #f8f8f8!important;
+  }
+
+
+  #table6 {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+  #table6 thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+  }
+  #table6 tbody td {
+    text-align: left;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+  }
+  #table6 thead tr th:first-child, #table6 tbody tr td:first-child {
+    border-left: none;
+  }
+  #table6 thead tr th:last-child, #table6 tbody tr td:last-child {
+    border-right: none;
+  }
+  #table6 tbody tr:nth-child(even){
+    background: #f3f3f3;
+  }
+
+
+  #table7 {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    border-collapse: separate;
+  }
+  #table7 thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #EDEDED;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+  }
+  #table7 tr th:first-child, #table7 tr td:first-child {
+    border-left: 1px solid #ddd;
+  }
+  #table7 tr th:last-child, #table7 tr td:last-child {
+    border-right: 1px solid #ddd;
+  }
+  #table7 thead tr th:first-child {
+    border-radius: 20px 0 0 0;
+  }
+  #table7 thead tr th:last-child {
+    border-radius: 0 20px 0 0;
+  }
+  #table7 tbody td {
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+  }
+  #table7 tbody tr:nth-child(even) {
+    background: #F8F8F8;
+  }
+  #table7 tbody tr:last-child td{
+    border-bottom: 1px solid #ddd;
+  }
+  #table7 tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 20px;
+  }
+  #table7 tbody tr:last-child td:last-child {
+    border-radius: 0 0 20px 0;
+  }
+
+
+  #table8 {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+  #table8 thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+  }
+  #table8 thead tr th:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  #table8 thead tr th:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+  #table8 tbody td {
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+  }
+  #table8 tbody tr:nth-child(even){
+    background: #f3f3f3;
+  }
+  #table8 tbody tr td:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+  #table8 tbody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+
+
+  #table9 {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+  #table9 thead th {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #444441;
+    border-top: 2px solid #716561;
+    border-bottom: 2px solid #716561;
+  }
+  #table9 tbody td {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444441;
+    border-top: 1px solid #716561;
+  }
+   
+  
+  #text1 {
+    color: green;
+  }
+
+  #text2 {
+    color: red;
+  }
+
+  #text3 {
+    color: blue;
+  }
+
+
+  #align1 {
+    text-align: left;
+  }
+
+  #align2 {
+    text-align: center;
+  }
+
+  #align3 {
+    text-align: right;
+  }
+
+
+  #decor1 {
+    text-decoration-line: overline;
+  }
+
+  #decor2 {
+    text-decoration-line: line-through;
+  }
+
+  #decor3 {
+    text-decoration-line: underline;
+  }
+
+
+  #transform1 {
+    text-transform: capitalize;
+  }
+
+  #transform2 {
+    text-transform: lowercase;
+  }
+
+  #transform3 {
+    text-transform: uppercase;
+  }
+
+
+  #indent1 {
+    padding-left: 100px;
+    text-indent: 10%;
+  }
+
+  #indent2 {
+    padding-left: 100px;
+    text-indent: -10%;
+  }
+
+
+  #shadow {
+    text-shadow: 3px 3px 5px red;
+  }
+
+
+  #decimal {
+    list-style-type: decimal;
+  }
+  
+  #decimal2 {
+    list-style-type: decimal-leading-zero;
+  }
+
+  #lower-roman {
+    list-style-type: lower-roman;
+  }
+
+  #upper-roman {
+    list-style-type: upper-roman;
+  }
+
+  #upper-alpha {
+    list-style-type: upper-alpha;
+  }
+
+  #lower-alpha {
+    list-style-type: lower-alpha;
+  }
+
+
+  #decoration1:hover {
+    text-decoration: underline;
+    font-size: 100%;
+  }
+  
+  #decoration1:active {
+    text-decoration: overline;
+  }
+  
+  #decoration2 {
+    text-decoration: line-through;
+  }
+
+
+  #cursor1:hover {
+    cursor: default;
+  }
+
+  #cursor2:hover {
+    cursor: move;
+  }
+
+  #cursor3:hover {
+    cursor: help;
+  }
+
+  #cursor4:hover {
+    cursor: pointer;
+  }
+
+  #cursor5:hover {
+    cursor: text;
+  }
+
+  #cursor6:hover {
+    cursor: wait;
+  }
+
+  #background1 {
+    background-color: #00FFFF;
+  }
+
+  #background2 {
+    object-fit: cover;
+  }
+
+  #background3 {
+    background-image: url("../../images/man_32.png");
+    background-repeat: repeat;
+  } 
+
+  #background4 {
+    background-image: url("../../images/man_64.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  #black {
+    color: black
+  }
+
+  #triangle1 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid black;
+  }
+
+  #triangle2 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid white;
+  }
+
+  #triangle3 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid red;
+  }
+
+  #triangle4 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid  	#FF00FF;
+  }
+
+  #triangle5 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid #800080;
+  }
+
+  #triangle6 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid #FFFF00;
+  }
+
+  #triangle7 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid #F0E68C;
+  }
+
+  #triangle8 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid #FFA500;
+  }
+
+  #triangle9 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid #FF6347;
+  }
+
+  #triangle10 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid #008000;
+  }
+
+  #triangle11 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid #00FFFF;
+  }
+
+  #triangle12 {
+    width: 0px;
+	  height: 0px;
+    margin: 100px 250px;
+	  border-left: 150px solid transparent;
+	  border-right: 150px solid transparent;
+	  border-bottom: 300px solid blue;
+  }

@@ -1,0 +1,63 @@
+:root {
+    --color1: #999966;
+    --color2: #aab7b8;
+}
+
+header {
+    background: var(--color1);
+    background: linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%);
+    color: #000066;
+}
+
+#section {
+    background-image: url("../images/2.jpg")
+}
+
+footer {
+    background-color: azure;
+}
+
+nav {
+    background: var(--color1);
+}
+
+section, aside {
+    background: var(--color2);
+    height: 100vh;
+    color: #000066;
+}
+
+
+   
+
+header, section, aside, footer {
+    padding: 10px;
+}
+
+a {
+    border-left: 1px solid #000066;
+    padding: 15px;
+       
+} 
+
+a:hover {
+    font-size: 120%;
+} 
+
+li {
+    list-style-type: none; 
+    
+}
+
+aside {
+    margin-left: -22px;
+}
+
+nav {
+    border: 1px solid #000066;
+}
+
+
+#home {
+    margin: 30px;
+}
