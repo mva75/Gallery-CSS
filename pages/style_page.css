@@ -697,7 +697,7 @@ nav {
 
   #background3 {
     background-image: url("../../images/man_32.png");
-    background-repeat: repeat;
+    background-repeat: repeat repeat;
   } 
 
   #background4 {
