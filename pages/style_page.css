@@ -818,3 +818,16 @@ nav {
 	  border-right: 150px solid transparent;
 	  border-bottom: 300px solid blue;
   }
+
+
+  .background3 {
+    background-image: url("../../images/man_32.png");
+    background-repeat: repeat repeat;
+  } 
+
+  .background4 {
+    background-image: url("../../images/man_64.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
